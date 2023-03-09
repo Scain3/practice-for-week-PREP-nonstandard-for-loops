@@ -14,7 +14,15 @@ function oddIndices(arr) {
 function oddReverse(arr) {
     // Return an array containing all the odd indices starting from the end
     // Your code here
+    let newArr = []
+    for(let i = arr.length-1; i >= 0; i--){
+        if(i % 2 !== 0){
+            newArr.push(arr[i])
+        }
+    }
+    return newArr;
 }
+//console.log(oddReverse([1,2,3,4]))
 
 function secondPower(arr) {
     // Return an array containing all indices that are powers of 2
