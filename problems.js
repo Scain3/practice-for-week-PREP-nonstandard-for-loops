@@ -27,7 +27,15 @@ function oddReverse(arr) {
 function secondPower(arr) {
     // Return an array containing all indices that are powers of 2
     // Your code here
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++){
+        let logNum = Math.log2(i);
+        if(Number.isInteger(logNum)) newArr.push(arr[i])
+    }
+    return newArr;
 }
+
+console.log(secondPower([1, 7, 6, 61, 53, 48, 91]))
 
 function nthPower(arr, n) {
     // Return an array containing all indices that are powers of n
